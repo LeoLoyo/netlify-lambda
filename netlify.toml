@@ -1,2 +1,5 @@
 [build]
-  functions = "build" # netlify-lambda builds to this folder AND Netlify reads functions from here
+  functions = "functions"
+
+[dev]
+  publish = "dist"

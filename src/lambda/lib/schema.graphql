@@ -1,0 +1,13 @@
+# Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
+
+type Category {
+  _id: ID!
+  title: String!
+}
+
+type Query {
+  "return all caegories"
+  getCategories: [Category]
+  "return a caegory"
+  getCategory(_id: ID!): Category
+}
